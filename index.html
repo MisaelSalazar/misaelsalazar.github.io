@@ -1,15 +1,11 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-	<title>Misael Salazar</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Misael Salazar | Front-End Dev</title>
+	<script src="https://cdn.tailwindcss.com"></script>
 
 	<style>
 		.justificado {
@@ -19,319 +15,171 @@
 		.ajustar {
 			display: inline-block;
 		}
+
+		a {
+			display: inline-block;
+			margin: 0.1rem;
+		}
+		#cordova, #php{
+			background-color: white;
+			border-radius: 25%;
+		}
 	</style>
 </head>
 
-<body class="is-preload">
+<body class="bg-gray-900 text-white font-sans">
 
-	<!-- Wrapper -->
-	<div id="wrapper" class="divided">
+	<!-- Hero -->
+	<section class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 py-20">
+		<div class="md:w-1/2 text-left">
+			<h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-blue-400">
+				Hola, soy Misael Salazar
+			</h1>
+			<p class="text-lg text-gray-300 mb-6 justificado">
+				Desarrollador Front-End con más de 3 años de experiencia en el desarrollo de aplicaciones web e
+				híbridas. Especializado en React, Apache Cordova y maquetado de interfaces responsivas (UI/UX). Con
+				capacidad de integración de APIs.
+			</p>
+			<a href="#contacto"
+				class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Contáctame</a>
+			<a href="#contacto"
+				class="bg-green-500 hover:bg-green-600 transition px-6 py-3 rounded text-white font-semibold">Descarga
+				mi CV</a>
+			<a href="#contacto"
+				class="bg-purple-500 hover:bg-purple-600 transition px-6 py-3 rounded text-white font-semibold">Visita
+				mi GitHub</a>
+		</div>
+		<div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+			<img src="/images/avatar_misael.jpg" alt="Foto Misael"
+				class="w-64 h-64 object-cover rounded-full border-4 border-blue-500 shadow-lg" />
+		</div>
+	</section>
 
-		<!-- One -->
-		<section
-			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-			<div class="content">
-				<h1>Misael Salazar</h1>
-				<p class="major justificado">
-					Desarrollador Front-End con más de 3 años de experiencia en el desarrollo de aplicaciones web e
-					híbridas.
-					Especializado en React, Apache Cordova y maquetado de interfaces responsivas (UI/UX). Con capacidad
-					de
-					integración de APIs. Sólida experiencia en software educativo, accesibilidad y tecnologías PWA.
-					Actualmente
-					colaborando con el IPICYT.
-				</p>
-				<ul class="actions stacked">
-					<li><a href="./documents/Curriculum_Misael.pdf" class="button big wide smooth-scroll-middle"
-							target="_blank">Descargar CV</a></li>
-					<li><a href="https://github.com/MisaelSalazar" class="button big wide smooth-scroll-middle"
-							target="_blank">
-							Ir a mi GitHub</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<img src="images/banner.jpg" alt="" />
-			</div>
-		</section>
+	<!-- Proyectos -->
+	<section class="py-20 px-8">
+		<h2 class="text-3xl font-bold mb-12 text-center">Algunos de mis proyectos</h2>
 
-		<section>
-			<center>
-				<h1>Experiencia en proyectos</h1>
-				<p>Para mas de mis proyectos revisa mi <a href="https://github.com/MisaelSalazar"
-						target="_blank">GitHub</a></p>
-			</center>
-		</section>
-
-		<!-- Two -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-			id="first">
-			<div class="content">
-				<h2>Proyecto IPICYT - UNADM</h2>
-				<p class="justificado">
+		<!-- Proyecto 1 -->
+		<div class="flex flex-col md:flex-row items-center mb-16">
+			<div class="md:w-1/2 md:pr-8">
+				<h3 class="text-2xl text-blue-400 font-semibold mb-2">Proyecto IPICYT - UNADM</h3>
+				<p class="text-gray-300 mb-2 justificado">
 					Colaboración como desarrollador Front End en un sistema de gestión educativa para una universidad
 					nacional. Mi participación consistió en implementar y optimizar módulos de interfaz, integrando APIs
 					externas.
+					<b>
+						<i>Por acuerdo de confidencialidad, no se pueden divulgar detalles técnicos específicos.</i>
+					</b>
 				</p>
-				<b>
-					<i>Por acuerdo de confidencialidad, no se pueden divulgar detalles técnicos específicos.</i>
-				</b>
+				<p class="text-md text-gray-400">React · PHP · Git · TypeScript · API REST · Swagger</p>
 				<br>
-				<ul class="actions stacked">
-					<li><a href="https://sige.dev-sso.unadmexico.mx/" class="button" target="_blank">Saber mas</a></li>
-				</ul>
+				<a href="#contacto"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Contáctame</a>
 			</div>
-			<div class="image">
-				<img src="images/spotlight01.png" alt="" />
+			<div class="md:w-1/2 mt-6 md:mt-0">
+				<img src="/images/ipicyt.png" alt="Huastekapp" class="rounded shadow-lg" />
 			</div>
-		</section>
+		</div>
 
-		<!-- Three -->
-		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-			<div class="content">
-				<h2>Proyecto Ingenio Santos</h2>
-				<p class="justificado">
+		<!-- Proyecto 2 -->
+		<div class="flex flex-col md:flex-row-reverse items-center mb-16">
+			<div class="md:w-1/2 md:pl-8">
+				<h3 class="text-2xl text-blue-400 font-semibold mb-2">Proyecto Ingenio Santos</h3>
+				<p class="text-gray-300 mb-2 justificado">
 					Desarrollo de una aplicación web interna para la gestión de comunicaciones y recursos de personal
 					sindicalizado en una empresa agroindustrial. La solución permite crear y publicar comunicados
 					visuales (flyers), noticias e información relevante para los trabajadores, todo administrado desde
 					un panel exclusivo.
 				</p>
-				<h3>Saber mas</h3>
-				<b>
-					<i>Solo se incluyen versiones demo, el software original, es propiedad del Ingenio Santos</i>
-				</b>
+				<p class="text-md text-gray-400">React · Vite · JavaScript · MySQL · PHP</p>
 				<br>
-				<!-- <ul class="actions stacked ajustar"> -->
-				<a href="https://github.com/MisaelSalazar/ingenio-dashboard" class="button"
-					target="_blank">Dashboard</a>
-				<a href="https://github.com/MisaelSalazar/ingenio-app" class="button" target="_blank">App movil</a>
-				<a href="https://github.com/MisaelSalazar/ingenio-backend" class="button" target="_blank">BackEnd</a>
-				<!-- </ul> -->
+				<a href="#contacto"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Contáctame</a>
 			</div>
-			<div class="image">
-				<img src="images/spotlight02.jpeg" alt="" />
+			<div class="md:w-1/2 mt-6 md:mt-0">
+				<img src="mockup_sige.png" alt="SIGE" class="rounded shadow-lg" />
 			</div>
-		</section>
+		</div>
 
-		<!-- Four -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-			<div class="content">
-				<h2>Proyecto ITSE</h2>
-				<p class="justificado">
+		<!-- Proyecto 3 -->
+		<div class="flex flex-col md:flex-row items-center">
+			<div class="md:w-1/2 md:pr-8">
+				<h3 class="text-2xl text-blue-400 font-semibold mb-2">Proyecto ITSE</h3>
+				<p class="text-gray-300 mb-2 justificado">
 					Software académico para la administración del centro de información del Instituto Tecnológico
 					Superior de Ébano. Incluye funcionalidades para la gestión de préstamos, inventario y registro de
 					usuarios. El sistema fue desarrollado en Java con conexión a base de datos MySQL, permitiendo su uso
 					como una herramienta completa en bibliotecas institucionales.
 				</p>
-				<ul class="actions stacked">
-					<li><a href="https://github.com/MisaelSalazar/Control-Biblioteca" class="button"
-							target="_blank">Saber mas</a></li>
-				</ul>
+				<p class="text-md text-gray-400">Java · MySQL</p>
+				<br>
+				<a href="#contacto"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Contáctame</a>
 			</div>
-			<div class="image">
-				<img src="images/spotlight03.png" alt="" />
+			<div class="md:w-1/2 mt-6 md:mt-0">
+				<img src="mockup_sameyvi.png" alt="Sameyvi" class="rounded shadow-lg" />
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-			<div class="content">
-				<h2>Educación</h2>
-				<p class="justificado">
-				<ul>
-					<li>
-						Ingenieria en Sistemas Computacionales
-						Instituto Tecnológico Superior de Ébano
-						Graduación: 2025
-					</li>
-				</ul>
-				</p>
+	<!-- Stack -->
+	<section class="py-20 px-8 bg-gray-800">
+		<h2 class="text-3xl font-bold text-center mb-8 text-white">Tecnologías que domino</h2>
+		<div class="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
 
-				<h2>Certificaciones</h2>
-				<p class="justificado">
-				<ul>
-					<li>Desarrollo Móvil en Línea, Aprende.org – 2024</li>
-					<li>Fundamentos de Machine Learning, Aprende.org – 2024</li>
-				</ul>
-				</p>
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" class="w-5 h-5" />
+				React
+			</span>
 
-			</div>
-			<div class="image">
-				<img src="images/banderas.jpg" alt="" />
-			</div>
-		</section>
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" class="w-5 h-5" />
+				Tailwind
+			</span>
 
-		<!-- Five -->
-		<section class="wrapper style1 align-center">
-			<div class="inner">
-				<h2>Galería de imágenes</h2>
-				<p>
-					En esta galería encontrarás una muestra visual de mi trayectoria profesional y personal.
-					Comparto imágenes de eventos, conferencias y proyectos en los que he participado, así como de mi
-					entorno de trabajo y setup, donde día a día desarrollo nuevas ideas.
-				</p>
-			</div>
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img id="cordova" src="https://cdn.simpleicons.org/apachecordova/35434F" alt="Cordova" class="w-5 h-5" />
+				Cordova
+			</span>
 
-			<!-- Gallery -->
-			<div class="gallery style2 medium lightbox onscroll-fade-in">
-				<article>
-					<a href="images/gallery/fulls/01.jpg" class="image">
-						<img src="images/gallery/thumbs/01.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>Area de trabajo en el ITSE</h3>
-						<p>Mi espacio de trabajo durante mi etapa dentro del ITSE</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/gallery/fulls/02.jpg" class="image">
-						<img src="images/gallery/thumbs/02.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>Software CHAPACAO</h3>
-						<p>Sistema gestor de inventarios diseñado para la empresa constructora CHAPACO</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/gallery/fulls/03.jpg" class="image">
-						<img src="images/gallery/thumbs/03.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>HuastekApp</h3>
-						<p>Aplicación diseñada para el aprendizaje de lenguas indígenas</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/gallery/fulls/04.jpg" class="image">
-						<img src="images/gallery/thumbs/04.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>INFOMATRIX 2024</h3>
-						<p>Paseo por las delegaciones internacionales en el evento INFOMATRIX 2024 final IBEROAMERICANA
-							celebrado en Zapopan, Jalisco, México</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/gallery/fulls/05.jpg" class="image">
-						<img src="images/gallery/thumbs/05.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<h3>InnovaTecNM 2024</h3>
-						<p>Tercer lugar en la etapa regional de InnovaTecNM 2024 (Guadalupe, Nuevo Leon) y pase
-							a la etapa nacional, a celebrarse en el mes de noviembre en Cdad. Madero Tamaulipas</p>
-						<ul class="actions fixed">
-							<li><span class="button small">Detalles</span></li>
-						</ul>
-					</div>
-				</article>
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img id="php" src="https://cdn.simpleicons.org/php/777BB4" alt="PHP8" class="w-5 h-5" />
+				PHP8
+			</span>
 
-			</div>
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/swagger/85EA2D" alt="Swagger" class="w-5 h-5" />
+				Swagger
+			</span>
 
-		</section>
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" class="w-5 h-5" />
+				Vite
+			</span>
 
-		<!-- Six -->
-		<section class="wrapper style1 align-center">
-			<div class="inner">
-				<h2>Habilidades y Competencias</h2>
-				<p>
-					A lo largo de mi trayectoria he desarrollado habilidades clave que me permiten adaptarme con
-					eficiencia al entorno de trabajo remoto.
-				</p>
-				<div class="items style1 medium onscroll-fade-in">
-					<section>
-						<span class="icon style2 major fa-gem"></span>
-						<h3>Comunicación y trabajo colaborativo</h3>
-						<p>
-							Mantengo una comunicación clara y efectiva con equipos distribuidos. Estoy familiarizado con
-							herramientas como Slack, Zoom y Git para garantizar una colaboración fluida en
-							proyectos remotos.
-						</p>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-save"></span>
-						<h3>Desarrollo Front-End / Back-End</h3>
-						<p>
-							Cuento con experiencia en tecnologías como HTML, CSS, JavaScript, React, PHP y MySQL. Me
-							adapto fácilmente a nuevas herramientas y metodologías de desarrollo ágil.
-						</p>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-chart-bar"></span>
-						<h3>Gestión de proyectos y tiempo</h3>
-						<p>
-							Organizo mi tiempo de forma eficiente, priorizando tareas y cumpliendo
-							plazos sin necesidad de supervisión constante.
-							No tengo problema con hacer horas extra cuando el proyecto es de alto impacto.
-						</p>
-					</section>
-				</div>
-			</div>
-		</section>
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/git/F05032" alt="Git" class="w-5 h-5" />
+				Git
+			</span>
 
-		<!-- Seven -->
-		<section class="wrapper style1 align-center">
-			<div class="inner medium">
-				<h2>Contactame</h2>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Nombre</label>
-							<input type="text" name="name" id="name" value="" />
-						</div>
-						<div class="field half">
-							<label for="email">Correo electronico</label>
-							<input type="email" name="email" id="email" value="" />
-						</div>
-						<div class="field">
-							<label for="message">Mensaje</label>
-							<textarea name="message" id="message" rows="6"></textarea>
-						</div>
-					</div>
-					<ul class="actions special">
-						<li><input type="submit" name="submit" id="submit" value="Enviar Mensaje" /></li>
-					</ul>
-				</form>
+		</div>
+	</section>
 
-			</div>
-		</section>
 
-		<!-- Footer -->
-		<footer class="wrapper style1 align-center">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
-					</li>
-					<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
-					</li>
-					<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a>
-					</li>
-					<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<p>&copy; Misael Salazar 2025</a>.</p>
-			</div>
-		</footer>
+	<!-- Contacto Sticky -->
+	<section id="contacto" class="py-20 px-8">
+		<div class="max-w-xl mx-auto text-center">
+			<h2 class="text-3xl font-bold mb-4 text-blue-400">¿Hablamos?</h2>
+			<p class="mb-6 text-gray-300">Estoy listo para construir tu próxima app, sistema o interfaz.</p>
+			<a href="mailto:misaelsalazarof@gmail.com"
+				class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Escríbeme</a>
+		</div>
+	</section>
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<!-- Footer -->
+	<footer class="py-6 text-center text-gray-500 text-sm bg-gray-900 border-t border-gray-700">
+		<p>Misael Salazar © 2025 — Desarrollo web & móvil con impacto social</p>
+	</footer>
 
 </body>
 
