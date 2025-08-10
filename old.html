@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Misael Salazar | Front-End Dev</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<style>
+		.justificado {
+			text-align: justify;
+		}
+
+		.ajustar {
+			display: inline-block;
+		}
+
+		a {
+			display: inline-block;
+			margin: 0.1rem;
+		}
+
+		#cordova,
+		#php {
+			background-color: white;
+			border-radius: 25%;
+		}
+	</style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+	<!-- Hero -->
+	<section class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 py-20">
+		<div class="md:w-1/2 text-left">
+			<h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-blue-400">
+				Hola, soy Misael Salazar
+			</h1>
+			<p class="text-lg text-gray-300 mb-6 justificado">
+				Desarrollador Front-End con más de 3 años de experiencia en el desarrollo de aplicaciones web e
+				híbridas. Especializado en React, Apache Cordova y maquetado de interfaces responsivas (UI/UX). Con
+				capacidad de integración de APIs.
+			</p>
+			<a href="#contacto"
+				class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Contáctame</a>
+			<a href="/documents/Curriculum_Misael.pdf" target="_blank"
+				class="bg-green-500 hover:bg-green-600 transition px-6 py-3 rounded text-white font-semibold">Descarga
+				mi CV</a>
+			<a href="https://github.com/MisaelSalazar" target="_blank"
+				class="bg-purple-500 hover:bg-purple-600 transition px-6 py-3 rounded text-white font-semibold">Visita
+				mi GitHub</a>
+		</div>
+		<div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+			<img src="/images/avatar_misael.jpg" alt="Foto Misael"
+				class="w-64 h-64 object-cover rounded-full border-4 border-blue-500 shadow-lg" />
+		</div>
+	</section>
+
+	<!-- Proyectos -->
+	<section class="py-20 px-8">
+		<h2 class="text-3xl font-bold mb-12 text-center">Algunos de mis proyectos</h2>
+
+		<!-- Proyecto 1 -->
+		<div class="flex flex-col md:flex-row items-center mb-16">
+			<div class="md:w-1/2 md:pr-8">
+				<h3 class="text-2xl text-blue-400 font-semibold mb-2">Proyecto IPICYT - UNADM</h3>
+				<p class="text-gray-300 mb-2 justificado">
+					Colaboración como desarrollador Front End en un sistema de gestión educativa para una universidad
+					nacional. Mi participación consistió en implementar y optimizar módulos de interfaz, integrando APIs
+					externas.
+					<b>
+						<i>Por acuerdo de confidencialidad, no se pueden divulgar detalles técnicos específicos.</i>
+					</b>
+				</p>
+				<p class="text-md text-gray-400">React · PHP · Git · TypeScript · API REST · Swagger</p>
+				<br>
+				<a href="https://sige.dev-sso.unadmexico.mx/" target="_blank"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Saber
+					mas</a>
+			</div>
+			<div class="md:w-1/2 mt-6 md:mt-0">
+				<img src="/images/ipicyt.png" alt="Huastekapp" class="rounded shadow-lg" />
+			</div>
+		</div>
+
+		<!-- Proyecto 2 -->
+		<div class="flex flex-col md:flex-row-reverse items-center mb-16">
+			<div class="md:w-1/2 md:pl-8">
+				<h3 class="text-2xl text-blue-400 font-semibold mb-2">Proyecto Ingenio Santos</h3>
+				<p class="text-gray-300 mb-2 justificado">
+					Desarrollo de una aplicación web interna para la gestión de comunicaciones y recursos de personal
+					sindicalizado en una empresa agroindustrial. La solución permite crear y publicar comunicados
+					visuales (flyers), noticias e información relevante para los trabajadores, todo administrado desde
+					un panel exclusivo.
+				</p>
+				<p class="text-md text-gray-400">React · Vite · JavaScript · MySQL · PHP</p>
+				<br>
+				<p><b>
+					<i>Versión demo incompleta del sistema, la oficial es propiedad del Igenio Santos</i>
+				</b></p>
+				<a href="https://github.com/MisaelSalazar/ingenio-dashboard" target="_blank"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Dashboard</a>
+				<a href="https://github.com/MisaelSalazar/ingenio-backend" target="_blank"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">BackEnd
+					(API REST)</a>
+				<a href="https://github.com/MisaelSalazar/ingenio-app" target="_blank"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">App
+					móvil</a>
+			</div>
+			<div class="md:w-1/2 mt-6 md:mt-0">
+				<img src="/images/ingenio.png" alt="SIGE" class="rounded shadow-lg" />
+			</div>
+		</div>
+
+		<!-- Proyecto 3 -->
+		<div class="flex flex-col md:flex-row items-center">
+			<div class="md:w-1/2 md:pr-8">
+				<h3 class="text-2xl text-blue-400 font-semibold mb-2">Proyecto ITSE</h3>
+				<p class="text-gray-300 mb-2 justificado">
+					Software académico para la administración del centro de información del Instituto Tecnológico
+					Superior de Ébano. Incluye funcionalidades para la gestión de préstamos, inventario y registro de
+					usuarios. El sistema fue desarrollado en Java con conexión a base de datos MySQL, permitiendo su uso
+					como una herramienta completa en bibliotecas institucionales.
+				</p>
+				<p class="text-md text-gray-400">Java · MySQL</p>
+				<br>
+				<a href="https://github.com/MisaelSalazar/Control-Biblioteca" target="_blank"
+					class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Saber
+					mas</a>
+			</div>
+			<div class="md:w-1/2 mt-6 md:mt-0">
+				<img src="/images/biblioteca.png" alt="Sameyvi" class="rounded shadow-lg" />
+			</div>
+		</div>
+	</section>
+
+	<!-- Stack -->
+	<section class="py-20 px-8 bg-gray-800">
+		<h2 class="text-3xl font-bold text-center mb-8 text-white">Tecnologías que domino</h2>
+		<div class="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
+
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" class="w-5 h-5" />
+				React
+			</span>
+
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" class="w-5 h-5" />
+				Tailwind
+			</span>
+
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img id="cordova" src="https://cdn.simpleicons.org/apachecordova/35434F" alt="Cordova"
+					class="w-5 h-5" />
+				Cordova
+			</span>
+
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img id="php" src="https://cdn.simpleicons.org/php/777BB4" alt="PHP8" class="w-5 h-5" />
+				PHP8
+			</span>
+
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/swagger/85EA2D" alt="Swagger" class="w-5 h-5" />
+				Swagger
+			</span>
+
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" class="w-5 h-5" />
+				Vite
+			</span>
+
+			<span class="bg-gray-700 px-4 py-2 rounded flex items-center gap-2 text-2xl">
+				<img src="https://cdn.simpleicons.org/git/F05032" alt="Git" class="w-5 h-5" />
+				Git
+			</span>
+
+		</div>
+	</section>
+
+
+	<!-- Contacto Sticky -->
+	<section id="contacto" class="py-20 px-8">
+		<div class="max-w-xl mx-auto text-center">
+			<h2 class="text-3xl font-bold mb-4 text-blue-400">¿Hablamos?</h2>
+			<p class="mb-6 text-gray-300">Estoy listo para construir tu próxima app, sistema o interfaz.</p>
+			<a href="mailto:misaelsalazarof@gmail.com"
+				class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded text-white font-semibold">Escríbeme</a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="py-6 text-center text-gray-500 text-sm bg-gray-900 border-t border-gray-700">
+		<p>Misael Salazar © 2025 — Desarrollo web & móvil con impacto social</p>
+	</footer>
+
+</body>
+
+</html>
